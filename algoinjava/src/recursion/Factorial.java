@@ -9,11 +9,13 @@ public class Factorial {
 
 	public static int calculateFactorial(int i) {
 		
+		System.out.println("Calculating factorial for "+i);
 		if(i==0){
 			return 1;
 		}
-		else{
-			return i * calculateFactorial(i-1);
+		
+		int factorial= i * calculateFactorial(i-1);
+		System.out.println("Done calculating factorial for "+i+" = "+factorial);
+		return factorial;
 		}
-	}
 }
